@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.google.services)
+
 }
 
 android {
@@ -51,6 +53,11 @@ android {
 
 dependencies {
 
+    implementation(platform(libs.firebase.bom)) // Firebase BoM
+    implementation(libs.firebase.analytics) // Firebase Analytics
+    implementation(libs.firebase.firestore) // Firebase Firestore
+
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -67,3 +74,4 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 }
+apply(plugin = "com.google.gms.google-services")
