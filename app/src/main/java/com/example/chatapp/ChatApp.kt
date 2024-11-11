@@ -15,7 +15,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.google.firebase.firestore.FirebaseFirestore
-import com.example.chatapp.R // Asegúrate de que este import esté correcto
+import com.example.chatapp.R 
 
 
 @Composable
@@ -49,7 +49,7 @@ fun ChatApp() {
                 color = Color.Black,
                 modifier = Modifier
                     .align(Alignment.CenterHorizontally)
-                    .background(Color(0x80FFFFFF)) // Fondo semitransparente
+                    .background(Color(0x80FFFFFF))
                     .padding(8.dp)
             )
 
@@ -60,8 +60,7 @@ fun ChatApp() {
                 fontWeight = FontWeight.Medium,
                 color = Color.Black,
                 modifier = Modifier
-                    .background(Color(0x80FFFFFF)) // Fondo semitransparente
-                    .padding(8.dp)
+                    .background(Color(0x80FFFFFF))
             )
             BasicTextField(
                 value = message,
@@ -82,7 +81,7 @@ fun ChatApp() {
                 fontWeight = FontWeight.Medium,
                 color = Color.Black,
                 modifier = Modifier
-                    .background(Color(0x80FFFFFF)) // Fondo semitransparente
+                    .background(Color(0x80FFFFFF))
                     .padding(8.dp)
             )
             Column(
@@ -97,7 +96,7 @@ fun ChatApp() {
                         fontSize = 14.sp,
                         color = Color.Black,
                         modifier = Modifier
-                            .background(Color(0x80FFFFFF)) // Fondo semitransparente
+                            .background(Color(0x80FFFFFF))
                             .padding(8.dp)
                     )
                 }
